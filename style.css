@@ -1,0 +1,58 @@
+
+.hidden-div{
+    display: none;
+}
+
+.main{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.movie-content
+{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.movie-content p
+{
+    margin: 5px 0 5px 0;
+}
+
+.movie-content div:not(:last-child)
+{
+    border-bottom: black 1px solid;
+}
+
+button.expand-details
+{
+    flex-grow: 1;
+    max-width: 100px;
+    min-width: 70px;
+    margin: 0 0 0 10px;
+}
+
+.movie-name
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .main{
+        width: 100%;
+    }
+}
